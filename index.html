@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+            <title>
+            Flore Restauration - Accueil
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Flore Restauration est un restaurant qui propose une cuisine camerounaise  authentique et savoureuse. Qui recuille des commandes en ligne , des plats emportés et egalement pour des évenements spéciaux.">
+        <meta name="keywords" content="restaurant, camerounais, cuisine camerounais, authentique, savoureuse, commandes en ligne, plats emportés, événements spéciaux, restaurant Paris , Flore Restauration , restaurant camerounais en ligne, plats camerounais, cuisine africaine, gastronomie camerounaise , restaurant camerounais en France">
+        <meta name="author" content="Flore Restauration">
+        <meta name="theme-color" content="ff40b4">
+        <meta name="robots" content="index, follow">
+        <!-- je dois ajouter un code de vérification Google ici -->
+        <meta name="google-site-verification" content="">
+         <!-- LIENS DU FAVICONS -->
+        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <div class="containeur">
+            <!-- ce bloc contient tous les blocs. il permet d'aligner et qu'ils aient les memes largeurs -->
+             <header>
+                <a href="index.html" class="logo">
+                    <img src="images/White and Green Minimalist Simple Kitchen Logo (2).png" alt="le logo du restaurant">
+                </a>
+                <input type="checkbox" name="" id="check">
+                <label for="check" class="icons" >
+                    <!-- icone menu -->
+                    <span id="icon-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+
+                    </span>
+                    <!-- icone closed -->
+                    <span id="icon-close">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </span>
+                </label>
+                <nav >
+                    <div id="navbar" class="menu">
+                        <a style="--i:0"  href="#Accueil" data-item="link" >Accueil</a>
+                        <a style="--i:1" href="#A-propos" data-item="link"> A propos</a>
+                        <a style="--i:2" href="#Menu" data-item="link">Menu</a>
+                        <a style="--i:3" href="#evenements" data-item="link">Evenements</a>
+                        <a style="--i:4" href="#Contact" data-item="link">Contact</a>
+                    </div>
+                    <a style="--i:5" href="tel:605858026" class="commander">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                        commander
+                    </a>
+                </nav>
+                
+             </header>
+             <main >
+                 <section id="Accueil" class="accueil  ">
+                    <!-- col2 c'est la classe qui met les deux div en grid -->
+                     <!-- accueil permet de personnaliser la section -->
+                      <div class=" col2">
+                          <div class="case1">
+                                <div class="petit-titre">
+                                    Authetique camerounaise
+                                </div>
+                                <div class="saveur">
+                                    <h2>
+                                        Les saveurs du <span class="cmr">Cameroun</span> à votre table
+                                    </h2>
+                                </div>
+                                <div class="texte-Accueil">
+                                    <p>
+                                        Découvrez la richesse culinaire du Cameroun avec nos plats traditionnels préparés avec amour et des ingrédients authentiques. Commandez par téléphone pour une expérience gustative unique
+                                    </p>
+                                </div>
+                                <div class="commande-menu">
+                                    <a href="" class="commandeur">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                                        commander
+                                    </a>
+                                    <a href="" class="voir-menu">
+                                        <svg width="16px" height="16px" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M256 410.56V96a32 32 0 0 1 64 0v314.56A96 96 0 0 0 384 320V96a32 32 0 0 1 64 0v224a160 160 0 0 1-128 156.8V928a32 32 0 1 1-64 0V476.8A160 160 0 0 1 128 320V96a32 32 0 0 1 64 0v224a96 96 0 0 0 64 90.56zm384-250.24V544h126.72c-3.328-78.72-12.928-147.968-28.608-207.744-14.336-54.528-46.848-113.344-98.112-175.872zM640 608v320a32 32 0 1 1-64 0V64h64c85.312 89.472 138.688 174.848 160 256 21.312 81.152 32 177.152 32 288H640z"></path></g></svg>
+                                        voir nos plats
+                                    </a>
+                                </div>
+                                <div class="ouverture-avis">
+                                    <!-- ce bloc est reservé pour les jours d ouvertures  -->
+                                    <div class="open">
+                                        <!-- ce bloc est pour donner les dates de disponibilités -->
+                                        <svg width="39px" height="39px" viewBox="-9.6 -9.6 43.20 43.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-9.6" y="-9.6" width="43.20" height="43.20" rx="1.2960000000000003" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#ff40b4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                        <div class="open-texte">
+                                            <div class="fw">ouvert</div>
+                                            <div class="tw">lorem</div> 
+                                        </div>
+                                    </div>
+                                    <div class="open">
+                                        <svg width="39px" height="39px" viewBox="-9.6 -9.6 43.20 43.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-9.6" y="-9.6" width="43.20" height="43.20" rx="1.2960000000000003" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z" fill="#ff40b4"></path> </g></svg>
+                                        <div class="open-texte">
+                                            <div class="fw">Commandes</div>
+                                            <div class="tw"> Par télephone uniquement</div>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                          </div>
+                          <div class="case2">
+                            <img src="images/plats/eru.jpg" alt="plat de Eru">
+                          </div>
+                      </div>
+                 </section>
+                 <div class="wrapper">
+                     <section id="A-propos" class="propos">
+                        <!-- col2-4 c'est la classe qui met les deux premiers div en 2 collonnes et le reste en 4  -->
+                        <div class="grid-container2">
+                            <!-- ce grid contient 2 blocs dont l un aura un -->
+                            <div class="grid-item-1">
+                                <!-- ce grid est reservé pour le text -->
+                                <div class="petit-titre">
+                                    Notre Histoire
+                                </div> <br>
+                                <div class="saveur">
+                                    <h2>
+                                        Une Passion Née au <span class="cmr">Cameroun</span> 
+                                    </h2>
+                                </div><br>
+                                <div class="texte-Accueil"> 
+                                    <p>
+                                        est né de la passion de Mama Akono pour la cuisine traditionnelle camerounaise. Arrivée en France il y a 15 ans, elle a voulu partager les saveurs authentiques de son pays natal avec tous les amoureux de bonne cuisine.
+                                    </p>
+                                    <br>
+                                    <P>
+                                        Chaque plat que nous préparons respecte les recettes ancestrales apprises dans la cuisine de ma grand-mère à Douala. Nous utilisons des épices et ingrédients importés directement du Cameroun pour garantir l'authenticité de nos saveurs. Notre mission : faire voyager vos papilles vers l'Afrique centrale.
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="grid-item-2">
+                                <div class="ss-grid1">
+                                    <img src="https://img.freepik.com/photos-premium/femme-chef-afro-americaine-age-moyen-pose-confiante_662214-193666.jpg" alt=" image du responsable de cuisine de FLORE Restauration">
+                                </div>
+                                <div class="ss-grid2">
+                                    <img src="https://www.arkham.be/wp-content/uploads/2021/03/cuisine-camerounaise-eru-watafufu.jpg" alt="image du ndole">
+                                </div>
+                                <div class="ss-grid3">
+                                    <img src="https://www.arkham.be/wp-content/uploads/2021/03/cuisine-camerounaise-eru-watafufu.jpg" alt="image du ndole">
+                                    
+                                </div>
+                                <div class="ss-grid4">
+                                    <img src="https://www.arkham.be/wp-content/uploads/2021/03/cuisine-camerounaise-eru-watafufu.jpg" alt="image du ndole">
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid-propos">
+                            <!-- c'est dan ce bloc que je cite les specialités du restau -->
+                           <div class="ssg-traditionf">
+                                <svg fill="#ff40b4" width="26px" height="26px" viewBox="-12 -12 54.00 54.00" xmlns="http://www.w3.org/2000/svg" stroke="#ff40b4" stroke-width="0.45"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-12" y="-12" width="54.00" height="54.00" rx="5.4" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7.975 2c-2.235.116-4.365 1.203-5.82 2.89C.7 6.57 0 8.786 0 11c0 1.938.697 3.816 1.646 5.46.95 1.644 2.19 3.077 3.5 4.394 2.824 2.833 6.08 5.232 9.622 7.09.145.076.32.076.464 0 3.543-1.858 6.798-4.257 9.622-7.09 1.31-1.317 2.55-2.75 3.5-4.393C29.304 14.817 30 12.94 30 11c0-2.22-.7-4.428-2.154-6.11C26.39 3.202 24.26 2.115 22.026 2c-1.516-.078-3.045.286-4.362 1.04-1.097.626-1.975 1.558-2.664 2.614-.69-1.056-1.567-1.988-2.664-2.615C11.02 2.285 9.49 1.92 7.976 2zm.05 1c1.32-.068 2.665.25 3.813.906 1.148.656 2.107 1.652 2.72 2.824.186.36.698.36.885 0 .612-1.172 1.57-2.168 2.72-2.824 1.147-.656 2.49-.974 3.812-.906 1.942.1 3.837 1.062 5.115 2.54C28.37 7.023 29 9 29 11c0 1.73-.628 3.43-1.512 4.96-.885 1.535-2.064 2.904-3.342 4.186-2.686 2.697-5.788 4.975-9.146 6.766-3.358-1.79-6.46-4.07-9.146-6.766-1.278-1.282-2.457-2.65-3.342-4.185C1.628 14.43 1 12.73 1 11c0-2 .63-3.978 1.91-5.46C4.188 4.063 6.083 3.1 8.025 3z"></path></g></svg>
+                                <br>
+                                <div>
+                                    <h4>Tradition Familiale</h4>
+                                </div> <br>
+                                <div>
+                                    Recettes transmises de génération en génération, gardant l'authenticité de nos saveurs.
+                                </div>
+                            </div> 
+                           <div class="ssg-ingredient">
+                                <svg width="26px" height="26px" viewBox="-9.6 -9.6 43.20 43.20" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, -1, 0, 0)" stroke="#ff40b4"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-9.6" y="-9.6" width="43.20" height="43.20" rx="4.32" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 3L13.4302 8.31181C13.6047 8.96 13.692 9.28409 13.8642 9.54905C14.0166 9.78349 14.2165 9.98336 14.451 10.1358C14.7159 10.308 15.04 10.3953 15.6882 10.5698L21 12L15.6882 13.4302C15.04 13.6047 14.7159 13.692 14.451 13.8642C14.2165 14.0166 14.0166 14.2165 13.8642 14.451C13.692 14.7159 13.6047 15.04 13.4302 15.6882L12 21L10.5698 15.6882C10.3953 15.04 10.308 14.7159 10.1358 14.451C9.98336 14.2165 9.78349 14.0166 9.54905 13.8642C9.28409 13.692 8.96 13.6047 8.31181 13.4302L3 12L8.31181 10.5698C8.96 10.3953 9.28409 10.308 9.54905 10.1358C9.78349 9.98336 9.98336 9.78349 10.1358 9.54905C10.308 9.28409 10.3953 8.96 10.5698 8.31181L12 3Z" stroke="#ff40b4" stroke-width="1.656" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <br>
+                                <div>
+                                    <h4>Ingrédients Authentiques</h4>
+                                </div> <br>
+                                <div>
+                                    Épices et ingrédients importés directement du Cameroun pour une expérience gustative vraie.
+                                </div>
+                           </div> 
+                           <div class="ssg-savoir">
+                                <svg width="26px" height="26px" viewBox="-9.6 -9.6 43.20 43.20" data-name="016_FOOD" id="_016_FOOD" xmlns="http://www.w3.org/2000/svg" fill="#ff40b4" stroke="#ff40b4" stroke-width="0.984"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-9.6" y="-9.6" width="43.20" height="43.20" rx="4.32" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:#ff40b4;}</style></defs><path class="cls-1" d="M4,11a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L4.59,8,3.29,6.71a1,1,0,0,1,0-1.42l2-2A1,1,0,0,1,6.71,4.71L5.41,6l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,4,11Z"></path><path class="cls-1" d="M11,11a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L11.59,8l-1.3-1.29a1,1,0,0,1,0-1.42l2-2a1,1,0,1,1,1.42,1.42L12.41,6l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,11,11Z"></path><path class="cls-1" d="M18,11a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,8l-1.3-1.29a1,1,0,0,1,0-1.42l2-2a1,1,0,1,1,1.42,1.42L19.41,6l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,18,11Z"></path><path class="cls-1" d="M4,21a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L4.59,18l-1.3-1.29a1,1,0,0,1,0-1.42l2-2a1,1,0,0,1,1.42,1.42L5.41,16l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,4,21Z"></path><path class="cls-1" d="M11,21a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L11.59,18l-1.3-1.29a1,1,0,0,1,0-1.42l2-2a1,1,0,0,1,1.42,1.42L12.41,16l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,11,21Z"></path><path class="cls-1" d="M18,21a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,18l-1.3-1.29a1,1,0,0,1,0-1.42l2-2a1,1,0,0,1,1.42,1.42L19.41,16l1.3,1.29a1,1,0,0,1,0,1.42l-2,2A1,1,0,0,1,18,21Z"></path></g></svg>
+                                <br>
+                                <div>
+                                    <h4>Ingrédients Authentiques</h4>
+                                </div> <br>
+                                <div>
+                                    Épices et ingrédients importés directement du Cameroun pour une expérience gustative vraie.
+                                </div>
+                           </div> 
+                           <div class="ssg-convivialité">
+                                <svg width="26px" height="26px" viewBox="-27.36 -27.36 126.72 126.72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet" fill="#ff40b4" stroke="#ff40b4" stroke-width="0.00072"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-27.36" y="-27.36" width="126.72" height="126.72" rx="12.672" fill="#fcb4df" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ff40b4" d="M63.4 58.9c0-2.6-.4-3.3-3.2-3.5c-.5 0-.8-.4-.8-.9v-1.3c0-.3.2-.7.5-.8c3.5-2.4 5.8-6.4 5.8-10.9l.1-.6c.1-.4.4-.7.8-.8c1.2-.3 2.1-1.1 2.4-2.3c.3-1.7-.8-3.2-2.4-3.5c-.3-.1-.4-.3-.4-.6l.4-5.2c.1-20.2-29-20.5-29.2-.4l.5 5.7c0 .2-.1.4-.3.5c-1.3.5-2.2 2-1.8 3.5c.3 1.1 1.3 1.8 2.5 2.1c.5.1.8.5.8 1v.5c0 4.6 2.4 8.7 6 11.1c.2.1.2.3.2.4v1.6c0 .4-.3.8-.8.8c-3 .2-3.3.9-3.4 3.4c-.1.2-.1.3-.2.4c-4.9 2.1-8.5 5-8.4 12.1c0 .4.4.8.8.8h37.9c.4 0 .8-.3.8-.8c.1-7.1-3.3-9.8-8.3-11.9c-.1-.2-.2-.3-.3-.4z"></path><path fill="#ff40b4" d="M38 56c0-3.2-.4-4-3.9-4.3c-.6 0-1-.5-1-1.1V49c0-.4.2-.8.6-1c4.3-2.9 7.1-7.8 7.1-13.3l.1-.7c.1-.5.5-.9 1-1c1.4-.3 2.6-1.4 2.9-2.8c.4-2.1-1-3.9-2.9-4.3c-.3-.1-.5-.4-.5-.7l.4-6.4C41.9-5.7 6.5-6 6.3 18.4l.6 7c0 .3-.1.5-.4.6c-1.6.6-2.7 2.4-2.2 4.3c.3 1.3 1.6 2.2 3 2.6c.6.1 1 .6 1 1.2v.6c0 5.6 2.9 10.6 7.3 13.5c.2.1.3.3.3.5v2c0 .5-.4 1-1 1c-3.6.2-4 1.1-4.1 4.2c-.1.1-.2.3-.3.4C4.5 58.8.1 62.4.3 71.1c0 .5.4.9 1 .9h46.2c.5 0 1-.4 1-.9c.2-8.7-4.1-11.9-10.1-14.5c-.2-.3-.3-.4-.4-.6z"></path></g></svg>
+
+                                <br>
+                                <div>
+                                    <h4>Ingrédients Authentiques</h4>
+                                </div> <br>
+                                <div>
+                                    Épices et ingrédients importés directement du Cameroun pour une expérience gustative vraie.
+                                </div>
+                           </div> 
+                        </div>
+                        
+                        <!-- fin de la section A propos -->
+                     </section>
+                     <section id="Menu" class="notre-menu">
+                            <!-- debut de la section menu -->
+                                <div class="petit-titre">
+                                    Notre Carte camerounaise
+                                </div>
+                                
+                                <div class="texte-Accueil">
+                                    <p>
+                                        Une sélection de plats traditionnels préparés selon les recettes ancestrales de nos différentes régions. Chaque plat raconte une histoire du Cameroun.
+                                    </p>
+                                    
+                                </div>
+                                <div class="grand-titre">
+                                    <!-- ce bloc contient le titre et les blocs de dessuous -->
+                                    <div class="titre">
+                                        Plats principaux
+                                    </div>
+                                    <div class="grid-plat">
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a class="link-whatsapp"  target="_blank">commander</a>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a class="link-whatsapp"  target="_blank">commander</a>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                               <a class="link-whatsapp" target="_blank">Commander</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a class="link-whatsapp"  target="_blank">commander</a>
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a class="link-whatsapp"  target="_blank">commander</a>
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille de prix -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix">15€</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ERU</strong> <br>
+                                                <span class="description-menu">
+                                                    spécialité authentique du sud-ouest du Cameroun.
+                                                </span> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a class="link-whatsapp"  target="_blank">commander</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            <!-- fin de la section menu -->
+                     </section>
+                     <section id="evenements" class="evenements">
+                        <!-- debut de la section evenement -->
+                                <div class="petit-titre">
+                                    Événements & Traiteur
+                                </div>
+                                
+                                <div class="texte-Accueil">
+                                    <p>
+                                        De l'intimité familiale aux grands événements, nous créons des moments inoubliables avec la richesse culinaire du Cameroun.
+                                    </p>
+                                    
+                                </div>
+                                <div class="grand-titre">
+                                    <div class="titre">
+                                        Plats principaux
+                                    </div>
+                                    <div class="grid-events">
+                                        <div class="plat">
+                                            <!-- PREMIERE grille d EVENEMENT -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix"> A partir 25€ / personne</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>MARIAGE</strong> <br>
+                                                <span class="description-menu">
+                                                    Menu complet pour vos mariages avec plats camerounais
+                                                </span> <br>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Ndolet
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Poulet DG
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    service traiteur
+                                                </div> <br>
+                                                
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a id="devisLinkMariage" href="#" onclick="openWhatsApp('mariage')">Demander un dévis</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille d EVENEMENT -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix"> A partir 25€ / personne</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>EVENEMENTS </strong> <br>
+                                                <span class="description-menu">
+                                                    Impressionnez vos clients et collègues avec notre cuisine
+                                                    <!-- Menu complet pour vos mariages avec plats traditionnels camerounais -->
+                                                </span> <br>
+                                                 <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Menu dégustation
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Service professionnel
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Presentation soignée
+                                                </div> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a id="devisLinkMariage" href="#" onclick="openWhatsApp('mariage')">Demander un dévis</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="plat">
+                                            <!-- PREMIERE grille d EVENEMENT -->
+                                            <div class="image-prix">
+                                                <img src="images/plats/eru.jpg" alt="Eru, un plat camerounais traditionnel" class="image-menu">
+                                                <span class="number-prix"> A partir 25€ / personne</span>
+                                            </div>
+                                            <div class="texte-prix">
+                                                <strong>ANNIVERSAIRES & FÊTES</strong> <br>
+                                                <span class="description-menu">
+                                                    Célébrez vos moments spéciaux avec nos saveurs authentiques
+                                                </span> <br>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Buffet varié
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    Décoration incluse
+                                                </div>
+                                                <div class="modalite">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                                    livraison possible
+                                                </div> <br>
+                                                <!-- je veux que lorsque le client clique sur le plat , il tombe sur le whatsapp du restaurant avec le message "Je veux commander le plat Eru" et que le numéro de téléphone soit celui du restaurant. -->
+                                                <a id="devisLinkMariage" href="#" onclick="openWhatsApp('mariage')">Demander un dévis</a>
+
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                    </div>
+                                    <div class="commande-contact">
+
+                                        <h4>
+                                            Près à commander?
+                                        </h4>
+                                        <p>
+                                            Appelez-nous maintenant et laissez-vous transporter par les saveurs authentiques du Cameroun. Nos conseils personnalisés vous guideront vers le plat parfait.
+                                        </p>
+                                        <a href="tel:+33751575896">
+                                            33 7 51 57 58 96</a>
+                                        
+                                    </div>
+                                </div>
+                        <!-- fin de la section evenement -->
+
+                     </section>
+                     <section id="Contact" class="contact">
+                        <div class="petit-titre">
+                            Contact & Commandes
+                        </div>
+                                
+                        <div class="texte-Accueil">
+                            <p>
+                                Contactez-nous par téléphone pour passer votre commande ou pour toute question. Nous sommes là pour vous conseiller et préparer vos plats préférés.
+                                <!-- De l'intimité familiale aux grands événements, nous créons des moments inoubliables avec la richesse culinaire du Cameroun. -->
+                            </p>
+                        </div>
+                        <div class="grid-contact">
+                            <div class="div1">
+                                <div>
+                                    Informatiques pratiques
+                                </div>
+                                <div class="flex-contact">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <strong>
+                                                Commandes & Renseignements
+                                            </strong>
+                                        </div>
+                                        <div><a href="tel:605858026">605858026</a></div>
+                                        <div>Réponse garantie en français </div>
+                                    </div>
+                                </div>
+                                <div class="flex-contact">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <strong>
+                                                Zone de livraion
+                                            </strong>
+                                        </div>
+                                        <div>lorem, lorem, loremo , loremo </div>
+                                    </div>
+                                </div>
+                                <div class="flex-contact">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <strong>
+                                                Mail
+                                            </strong>
+                                        </div>
+                                        <div><a href="mailto:florerestauration90@gmail.com"> florerestauration90@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div>
+                                    Horaires de commande
+                                </div>
+                                <div class="horaire-commande">
+                                    <div class="lundi"> 
+                                        <div>lundi - vendredi</div>
+                                        <div>11h00 - 21h00</div>
+                                    </div>
+                                    <div class="lundi"> 
+                                        <div>samedi</div>
+                                        <div>11h00 - 22h00</div>
+                                    </div>
+                                    <div class="lundi"> 
+                                        <div>DIMANCHE</div>
+                                        <div>Fermé</div>
+                                    </div>
+                                </div>
+                                <div class="delai-commande">
+                                    💡 Commandez avant 20h pour une livraison le jour même
+                                </div>
+                            </div>
+                            <div class="div3">
+                                <div>Modalités de commandes</div>
+                                <div class="modalite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                    Commande minimum : 15€
+                                </div>
+                                <div class="modalite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                    Paiement : espèces ou virement
+                                </div>
+                                <div class="modalite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff40b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                                    Délai de préparation : 30-45 min
+                                </div>
+
+                            </div>
+                        </div>
+                     </section>
+                     <hr>
+                     <footer>
+                        <div>
+                            © 2025 Flore restaurant. Mentions légales Politique de confidentialité CGC
+                        </div>
+                        <div>
+                            ce site est conçu et dévloppé par <a href="https://wa.me/33605858026">Ambela Valentin</a> .Tous droits réservés
+                        </div>
+                     </footer>
+
+                 </div>
+
+             </main>
+             <!-- fin du bloc containeur -->
+        </div>
+        <!-- Bouton flottant -->
+        <button id="scrollTopBtn" class="fab">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5f0f3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-icon lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+        
+        </button>
+        <script>
+                const numeroRestaurant = "33605858026"; // format international sans "+"
+  
+                // Sélectionner toutes les cartes plats
+                document.querySelectorAll(".plat").forEach
+                (plat => 
+                {
+                    const nomPlat = plat.querySelector("strong").textContent.trim();
+                    const prix = plat.querySelector(".number-prix")?.textContent.trim() || "";
+                    const bouton = plat.querySelector(".link-whatsapp");
+                    
+                    // Message prérempli
+                    const message = `Bonjour madame FLORE je viens de votre page je veux commander le plat ${nomPlat}${prix ? " à " + prix : ""}. Pouvez-vous me confirmer la disponibilité et le délai de livraison ? Merci !`;
+                    
+                    // Encodage et injection du lien
+                    const url = `https://wa.me/${numeroRestaurant}?text=${encodeURIComponent(message)}`;
+                    bouton.href = url;
+                });
+
+
+
+
+                function openWhatsApp(type) {
+                const phone = "33605858026"; // Ton numéro au format international sans "+"
+                let message = "";
+
+                switch (type) {
+                case "mariage":
+                    message = "Bonjour, je suis intéressé par le service traiteur pour un mariage traditionnel.";
+                    break;
+                case "anniversaire":
+                    message = "Bonjour, je souhaite organiser un anniversaire ou une fête avec buffet et animation.";
+                    break;
+                case "entreprise":
+                    message = "Bonjour, je voudrais recevoir un devis pour un événement d'entreprise.";
+                    break;
+                }
+
+                const encodedMessage = encodeURIComponent(message);
+                const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+                window.open(url, "_blank");
+                }
+
+
+                //pour le bouton scroll
+                const btn = document.getElementById("scrollTopBtn");
+
+                // Affiche le bouton quand on descend
+                window.addEventListener("scroll", () =>
+                {
+                if (window.scrollY > 300) { // après 300px de scroll
+                    btn.classList.add("show");
+                } else {
+                    btn.classList.remove("show");
+                }
+                });
+
+                // Scroll vers le haut quand on clique
+                btn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // défilement fluide
+                });
+                });
+
+
+
+                //pour le menu de barre de navigation
+                const isopen = true
+                const navbar = document.querySelector('#navbar')
+                navbar.addEventListener('click' , (e)  =>
+                {
+                    //si le menu n;est pas ouvert on ne fait rien
+                    if (!isopen) return
+
+                    const target = e.target
+                    const link = target.closet('[data-item="a"]')
+                    if (!link) return
+                })
+        </script>
+    </body>
+</html>

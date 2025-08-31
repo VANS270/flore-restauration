@@ -1,0 +1,819 @@
+/* Sélecteur universel : réinitialisation des marges, paddings et police */
+*,
+*::before,
+*::after
+{
+    font-family: Montserrat, sans-serif; /* Police principale */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille */
+}
+/* Variables CSS globales */
+:root
+{
+    /* Couleurs principales du thème */
+    --couleur-principale: #ff40b4;
+    --couleur-secondaire: #ec63a8;
+    --couleur-troisieme: #fcb4df;
+    --couleur-quatrieme: #f7dbf1;
+    --couleur-leger:#fbcce846;
+    --couleur-plus-leger: #f8dfee3f;
+    --couleur-bg-transparent: rgba(255, 255, 255, 0.18);
+     
+    /* Couleurs de texte */
+    --couleur-texte-primaire: #000000;
+    --couleur-texte-secondaire: #656464;
+    --couleur-white: #ffffff;
+    --couleur-texte-theme: var(--couleur-secondaire);
+    --couleur-texte-theme-clair: var(--couleur-troisieme);
+
+    /* Tailles de police */
+    --taille-1x:0.9rem;
+    --taille-2x:1rem;
+    --taille-3x:1.7rem; 
+    --taille-4x:2.2rem;
+    --taille-5x:3rem;
+    --taille-H1-grand:2.2rem;
+    --taille-H1-petit:1.8rem;
+    --taille-small:0.6rem;
+
+    /* Border radius */
+    --border-radius-small: 5px;
+    --border-radius-medium: 10px;
+    --border-radius-large: 20px;
+
+    /* Tailles de grilles prix */
+    --largeur-normal:280px;
+    --longueur-normal: 190px;
+    /* dimension header */
+    --gap-header:153.833px;
+    --width-logo: 90px;
+    
+     
+}
+html
+{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body
+{
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+    background-color: var(--couleur-leger); /* Couleur de fond */
+    width: 100vw;
+    min-height: 100%;
+    line-height: 1.5;
+    font-size: var(--taille-1x);
+}
+img
+{
+    display: block;
+}
+h1
+{
+    font-size: var(--taille-H1-grand);
+}
+a
+{
+    text-decoration: none;
+}
+
+
+
+/* ---------header---------- */
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-header);
+    width: 100%;
+    height: 110px;
+    padding: 0rem 5%;
+    background-color: white;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1000;
+}
+.logo img
+{
+    max-width: var(--width-logo);
+    height: 90px;
+    border-radius: var(--border-radius-small);
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.menu
+{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    & a 
+    {
+        color: var(--couleur-texte-secondaire);
+        &:hover
+        {
+            color: var(--couleur-secondaire);
+        }
+    }
+}
+.icons
+{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right:9%;
+}
+#check
+{
+    display: none;
+}
+.commander
+{
+    width: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--couleur-principale);
+    color: white;
+    gap: 5px;
+    padding: 2px 5px;
+    border-radius: var(--border-radius-small);
+    
+    
+}
+
+/* -----------des classes communes------------- */
+.wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: calc(var(--width-logo)  + 552.167px + var(--gap-header) );
+    padding: 0%;
+}
+.petit-titre
+{
+    background-color: var(--couleur-troisieme);
+    display: inline-block;
+    padding: 5px 10px;
+    color:var(--couleur-principale);
+    border-radius: var(--border-radius-small);
+}
+
+/* ----------------------section Accueil----------------------- */
+.case1,.case2
+{
+    width: 383px;
+    
+    height: 400px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.col2
+/* col2 c'est la classe qui met les deux div en grid dans acceuil */
+
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px ;
+    margin: auto;
+    /* width: 850px; */
+    width: calc(var(--width-logo)  + 552.167px + var(--gap-header) );
+    padding: 0%;
+}
+.accueil
+{
+    width: 100vw;
+    margin-top: 8rem;
+    padding-top: 4rem;
+    max-height: 400px;
+    /* Image de fond semi-transparente */
+    &::before
+    {
+        content:''; /* Nécessaire pour afficher le ::before */
+        position: absolute; /* Position absolue */
+        top: 0; 
+        left: 0; 
+        right: 0;
+        bottom: 0;
+        background: url('images/plats/eru.jpg') no-repeat center center/cover;
+        height: 650px;
+        z-index: -1; /* Derrière le contenu */
+        opacity: 0.1; /* Transparence */
+        
+    }
+    & .petit-titre
+    {
+        margin-bottom: 1rem;
+    }
+    & .case2 img
+    {
+    width: 383px;
+    height: 385px;
+    border-radius: var(--border-radius-medium) ;
+    }
+    
+    
+}
+.cmr
+{
+    color: var(--couleur-principale);
+}
+.texte-Accueil
+/* un bloc prncipal */
+{
+    width: 95%;
+    margin-bottom: 1.5rem;
+}
+.saveur
+/* ls saveurs du cameroun */
+/* un bloc principal */
+{
+    width: 70%;
+    font-size: var(--taille-2x) ;
+    margin-bottom: 1.5rem;
+    
+}
+.voir-menu
+{
+    background-color: var(--couleur-white) ;
+    border: 0.7px var(--couleur-troisieme) solid ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur-texte-primaire);
+    padding: 2px 6px;
+    gap:8px;
+    border-radius: var(--border-radius-small) ;
+    transition: 0.3s ease-in-out;
+    &:hover
+    {
+        background-color: rgba(250, 245, 245, 0.267) ;
+    }
+}
+.commandeur
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--couleur-principale);
+    color: white;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: var(--border-radius-small);
+    
+}
+.commande-menu
+/* un bloc principal */
+{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 1.5rem;
+}
+.fw
+/* fort weigth de commander de ouverture et avis  dans open*/
+{
+    font-weight: 600;
+}
+.tw
+/* faible weight de commander de ouverture et avis dans open */
+{
+    color: var(--couleur-texte-secondaire);
+}
+.open
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    & svg
+    {
+        border-radius: var(--border-radius-small);
+    }
+}
+.ouverture-avis
+{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+  
+
+
+/* ------------- section a propos ------------------- */
+
+    /* Grid Container */
+.grid-container2
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 18px;
+}
+
+/* Grid Item 1 - Desktop */
+.grid-item-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  
+  
+}
+
+/* Grid Item 2 - Desktop */
+.grid-item-2 {
+  margin:12px 0;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  /* background-color: #881822; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* optionnel, pour l’espace entre les blocs */
+}
+
+.ss-grid1
+{
+    /* grid-row: 1 / 2;
+    grid-column: 1 / 2; */
+    border-top-left-radius: var(--border-radius-small);
+    background-color: aquamarine; 
+    overflow: hidden;
+    & img
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+.ss-grid2
+ { 
+    /* grid-row: 2 / 3;
+    grid-column: 1 /2; */
+    border-top-right-radius: var(--border-radius-small);
+    background-color: #9a4b7e;
+    overflow: hidden;
+    & img
+    {
+        width: 100%;
+        height: 100%;
+    } 
+}
+.ss-grid3 
+{
+    /* grid-row:  1 / 2;
+    grid-column: 2 /3  ; */
+    border-bottom-left-radius: var(--border-radius-small);
+    background-color: blue; 
+    overflow: hidden;
+    & img
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+.ss-grid4 
+{
+    /* grid-row: 2 / 3;
+    grid-column: 2 /3 ; */
+    border-bottom-right-radius: var(--border-radius-small);
+    background-color: darkblue; 
+    overflow: hidden;
+    & img
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+.propos
+{
+    margin-top: 310px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.grid-propos
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.ssg-traditionf ,.ssg-ingredient , .ssg-savoir ,.ssg-convivialité
+{
+    background-color: var(--couleur-plus-leger);
+    text-align: center;
+    border: 0.1px var(--couleur-quatrieme) solid;
+    border-radius: var(--border-radius-medium) ;
+    padding: 15px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+    &:hover
+    {
+        transform: perspective(190px) translateZ(3px);
+        box-shadow:  1px 4px 14px -4px rgba(0,0,0,0.81);
+        border: 0.4px var(--couleur-troisieme) solid;
+
+    }
+    & div:last-child
+    {
+        color: var(--couleur-texte-secondaire);
+    }
+}
+
+/* certaines classes qui se trouvent dans le html appartiennt à la section Accueil  */
+
+
+/* ---------------fin section A propos----------------- */
+
+
+/* -------------debut de section A propos------------ */
+.notre-menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > .petit-titre
+    {
+        margin-bottom: 19px;
+    }
+    & > .texte-Accueil
+    {
+        width: 60%;
+        text-align: center;
+    }
+}
+.grand-titre
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.titre
+/* c'est ce bloc qui contient plats principaux */
+{
+    background-color: var(--couleur-secondaire);
+    display: inline-block;
+    padding: 5px 50px;
+    text-align: center;
+    justify-content: center;
+    color:var(--couleur-white);
+    border-radius: var(--border-radius-medium);
+}
+.grid-plat
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 35px
+}
+
+
+
+.image-prix
+    /* cette classe est appliquée à l'image et au prix */
+{
+    position: relative;
+    /* Image du menu */
+    & img
+    {
+        border-top-left-radius: var(--border-radius-medium); /* Bords arrondis en haut à gauche */
+        border-top-right-radius: var(--border-radius-medium); /* Bords arrondis en haut à droite */
+        width: 100%; /* Largeur fixe */
+        height: 190px; /* Hauteur fixe */
+    }
+    /* Prix du menu */
+    & .number-prix
+    {
+        position: absolute; /* Position absolue */
+        top: 10px; /* Décalage du haut */
+        right: 10px; /* Décalage de droite */
+        background-color: var(--couleur-principale); /* Fond rose */
+        color: var(--couleur-white); /* Texte blanc */
+        padding: 5px 10px; /* Espacement interne */
+        border-radius: var(--border-radius-small); /* Bords arrondis */
+    }
+}
+    /* Bloc texte du menu */
+.texte-prix
+{
+    text-align: left; /* Alignement à gauche */
+    padding-inline: 20px; /* Espacement horizontal */
+    padding-top: 15px; /* Espacement en haut */
+    padding-bottom: 15px; /* Espacement en bas */
+    line-height: 1.9; /* Hauteur de ligne */
+    background-color: var(--couleur-white); /* Fond blanc */
+    border-bottom-left-radius: var(--border-radius-medium); /* Bords arrondis en bas à gauche */
+    border-bottom-right-radius: var(--border-radius-medium); /* Bords arrondis en bas à droite */
+    /* Style du nom du menu */
+    & strong
+    {
+        font-size: var(--taille-1x); /* Taille normale */
+    }
+    /* Lien de commande */
+    & a 
+    {
+        display: inline-block; /* Bloc inline */
+        text-align: center; /* Centrage du texte */
+        padding-inline: 20px; /* Espacement horizontal */
+        margin-top: 10px; /* Espace en haut */
+        margin-bottom: 10px; /* Espace en bas */
+        width: 100%; /* Largeur fixe */
+        background-color: var(--couleur-leger); /* Fond rose très clair */
+        border: var(--couleur-principale) solid 1px; /* Bordure rose */
+        color: var(--couleur-texte-primaire); /* Texte noir */
+        border-radius: var(--border-radius-medium); /* Bords arrondis */
+    }
+}
+
+/* Description du menu */
+.description-menu
+/* c'est le petit texte qui décrit le menu */
+{
+    font-weight: 200; /* Texte fin */
+    font-family: 'Roboto', sans-serif; /* Police secondaire */
+}
+
+
+
+/* ---------------------------debut de la section evenements------------------------------------ */
+
+.evenements
+{
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > .petit-titre
+    {
+        margin-bottom: 19px;
+    }
+    & > .texte-Accueil
+    {
+        width: 60%;
+        text-align: center;
+    }
+    & .grand-titre
+    {
+        width: 100%;
+    }
+}
+.grid-events
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    & img
+    {
+        height: 210px;
+    }
+    & a 
+    {
+        background-color: var(--couleur-principale);
+        color: var(--couleur-white);
+    }
+    .number-prix
+    {
+        top:170px;
+        /* bottom: 10px; */
+    }
+    
+}
+.commande-contact
+{
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alignement vertical */
+    align-items: center; /* Centrage horizontal */
+    gap: 15px; /* Espacement vertical */
+    width: 100%    ; /* Largeur fixe */
+    margin-top: 30px; /* Espace en haut */
+    margin-bottom: 50px; /* Espace en bas */
+    /* margin-right: 92px; Espace à droite */
+    background-color: var(--couleur-principale); /* Fond rose */
+    padding: 25px; /* Espacement interne */
+    border-radius: var(--border-radius-medium); /* Bords arrondis */
+    text-align: center; /* Centrage du texte */
+    font-size: var(--taille-2x); /* Taille grande */
+    line-height: 1.5; /* Hauteur de ligne */
+    color: var(--couleur-white); /* Texte blanc */
+    /* Texte du bloc */
+    & p
+    {
+        width: 90%; /* Largeur réduite */
+        font-size: var(--taille-1x); /* Taille normale */
+        opacity: 0.85;
+    }
+    /* Lien principal */
+    & > a 
+    {
+        color: var(--couleur-white); /* Texte blanc */
+    }
+    /* Bloc de liens */
+    & div
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 30px; /* Espacement entre les liens */ 
+        justify-content: center; /* Centrage horizontal */
+        align-items: center; /* Centrage vertical */
+
+
+        /* Lien secondaire */
+        & a
+        {
+            color: var(--couleur-white); /* Texte blanc */
+            background-color: var(--couleur-troisieme); /* Fond rose clair */
+            font-size: var(--taille-small); /* Petite taille */
+            padding: 10px; /* Espacement interne */
+            border-radius: var(--border-radius-medium); /* Bords arrondis */
+            transition: all 0.3s ease-in-out; /* Animation */
+            &:first-of-type
+            {
+                background-color: var(--couleur-white); /* Fond blanc pour le premier lien */
+                color: var(--couleur-texte-primaire); /* Texte noir */
+                font-weight: 650;
+                &:hover
+                /* Effet au survol */
+                {
+                    background-color: var(--couleur-troisieme); /* Fond rose très clair */
+                    color: var(--couleur-secondaire); /* Texte noir */
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ----------section contact------------- */
+
+
+.contact
+{
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    & > .petit-titre
+    {
+        margin-bottom: 19px;
+    }
+    & > .texte-Accueil
+    {
+        width: 60%;
+        text-align: center;
+    }
+}
+.grid-contact
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 17px;
+}
+.div1 {
+    grid-row: span 2 / span 2;
+    background-color: var(--couleur-white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    border: 0.4px var(--couleur-quatrieme) solid ;
+    border-radius: var(--border-radius-medium);
+}
+.div2
+{
+    background-color: var(--couleur-white);
+    border-radius: var(--border-radius-medium);
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    border: 0.4px var(--couleur-quatrieme) solid ;
+}
+
+.div3 {
+    grid-column-start: 2;
+     background-color: var(--couleur-white);
+    border-radius: var(--border-radius-medium);
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    border: 0.4px var(--couleur-quatrieme) solid ;
+}
+.flex-contact
+{
+    display: flex;
+    gap:12px;
+    align-items: flex-start;
+    & svg
+    {
+        border-radius: var(--border-radius-small);
+        padding: 5px;
+        background-color: var(--couleur-troisieme);
+    }
+    & a
+    {
+        color: var(--couleur-principale);
+    }
+}
+.lundi
+{
+    display: flex;
+    justify-content: space-between;
+    & div:first-child
+    {
+        font-weight: 500;
+    }
+}
+.delai-commande
+{
+    padding: 10px 5px;
+    color: var(--couleur-principale);
+    background-color: var(--couleur-leger);
+    border-radius: var(--border-radius-small);
+    font-size: 0.64rem;
+    word-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+}
+.modalite
+{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: var(--taille-1x);
+}
+
+
+/* -------footer------------ */
+footer
+{
+    line-height: 2;
+    margin: 10px  0;
+    text-align: center;
+}
+hr
+{
+    color: var(--couleur-principale);
+}
+
+
+/* -------boton scroll--------------- */
+.fab {
+  position: absolute;
+    top: 0px;         /* distance du bas */
+  right: 10px;          /* distance de la droite */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;   /* bouton rond */
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, transform 0.2s;
+  opacity: 0;           /* invisible par défaut */
+  pointer-events: none; /* désactivé si invisible */
+}
+
+/* Apparition quand actif */
+.fab.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Effet au survol */
+.fab:hover {
+  background-color: #e73370;
+  transform: scale(1.1);
+}
