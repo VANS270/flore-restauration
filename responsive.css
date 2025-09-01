@@ -283,13 +283,13 @@
     .commandeur 
     {
         padding: 7px 10px;
-        font-size: large;
+        font-size: medium;
 
     }
     .voir-menu
     {
      padding: 4px 6px;
-     font-size: large;
+     font-size: medium;
 
     }
 }
@@ -301,3 +301,4 @@
     }
 
 }
+
