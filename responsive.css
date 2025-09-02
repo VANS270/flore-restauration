@@ -301,4 +301,37 @@
     }
 
 }
+@media (max-width:450px)
+{
+    .accueil
+    {
+     &::before
+     {
+        height: 820px;
+     }
+     margin-bottom: 50px;
+    }
+}
+@media (max-width:400px)
+{
+    .wrapper, .col2
+    {
+        width: calc(100vw - 2 * (100vw / 9) + 12.273px);
+        & section
+        {
+            max-width:100%;
+            min-width: 0;
+
+        }
+        
+    }
+}
+@media (max-width:350px)
+{
+    body
+    {
+        font-size: small;
+    }
+}
+
 
