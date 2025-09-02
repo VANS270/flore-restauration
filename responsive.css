@@ -292,6 +292,10 @@
      font-size: medium;
 
     }
+    .texte-Accueil
+    {
+        width: 98%;
+    }
 }
 @media (max-height:478px)
 {
@@ -333,5 +337,6 @@
         font-size: small;
     }
 }
+
 
 
